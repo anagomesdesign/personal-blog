@@ -1,6 +1,14 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
 
+/* General */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -11,17 +19,50 @@ body {
 header {
     background-color: #F1F1F1;
     margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 14px 5%;
 }
 
 .logo {
     width: 64px;
     display: inline-block;
+    cursor: pointer;
+    margin-right: auto;
 }
 
 .logo-name {
     display: inline-block;
     text-transform: uppercase;
+    margin-right: auto;
 }
+
+.menu-item, .menu-item a, .logo-name {
+    text-decoration: none;
+    font-size: 16px;
+    color: #35322C;
+
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 28px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: blue;
+}
+
+/* footer */
 
 footer {
     position: fixed;
