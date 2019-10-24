@@ -3,12 +3,6 @@
 
 /* General */
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -25,24 +19,33 @@ header {
     padding: 14px 5%;
 }
 
+@media (max-width: 600px) {
+    .header {
+        margin: auto;
+        display: block;
+        justify-content: center;
+    }
+}
+
 .logo {
-    width: 64px;
+    width: 40px;
     display: inline-block;
     cursor: pointer;
     margin-right: auto;
 }
 
-.logo-name {
-    display: inline-block;
-    text-transform: uppercase;
-    margin-right: auto;
+@media (max-width: 600px) {
+    .logo {
+        display: block;
+        margin: auto;
+        align-content: center;
+    }
 }
 
 .menu-item, .menu-item a, .logo-name {
     text-decoration: none;
     font-size: 16px;
     color: #35322C;
-
 }
 
 .nav-links {
@@ -54,17 +57,37 @@ header {
     padding: 0px 28px;
 }
 
+@media (max-width: 600px) {
+    .nav-links li {
+
+        display: block;
+        padding-bottom: 14px;
+    }
+
+}
+
 .nav-links li a {
     transition: all 0.3s ease 0s;
 }
 
 .nav-links li a:hover {
-    color: blue;
+    border-bottom: 2px solid #35322C;
+    padding-bottom: 4px;
+}
+
+.nav-links li a:active {
+    background-color: #f1f1f1;
+    border-bottom: 3px solid #35322C;
+}
+
+.active {
+    font-weight: 700;
 }
 
 /* footer */
 
 footer {
+    background-color: #35322C;
     position: fixed;
     left:0px;
     right:0px;
@@ -74,10 +97,15 @@ footer {
 }
 
 footer p {
-    background-color: #35322C;
     color: #f1f1f1;
     text-align: center;
     font-size: 12px;
     padding: 14px;
     margin: 0;
+}
+
+.fa-heart {
+
+    color: red;
+    padding: 0 2px;
 }
