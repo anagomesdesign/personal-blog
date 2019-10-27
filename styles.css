@@ -8,6 +8,10 @@
     padding: 0;
 }
 
+body {
+    background-color: #f5f6f7;
+}
+
 header {
     background-color: black;
 }
@@ -35,7 +39,7 @@ header {
 li, a, button {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.9em;
     color: #dfe2e6;
     text-decoration: none;
 }
@@ -85,17 +89,50 @@ button:hover {
 
 .banner:hover{
     cursor: pointer;
+    display: inline-block;
+    vertical-align: middle; 
 }
+
 
 h1 {
     font-family: 'Staatliches', sans-serif;
     font-size: 4em;
     text-align: center;
-    line-break: loose;
     color: #fff;
-    background-color: rgb(53,50,44,0.45);    
+    background-color: rgb(53,50,44,0.45);
+    height: 140px;
+    padding-top: 50px;
+       
 }
 
+.subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    text-align: center;
+    color: #dfe2e6;
+    height: 100px;
+    background-color: rgb(53,50,44,0.45);
+}
+
+/* Article */
+
+.container {
+    width: 100%;
+    grid-template-columns: 30% 30% 30%;
+    display: grid;
+    grid-gap: 14px;
+    margin: auto;
+    justify-content: center;
+    padding-top: 28px;
+}
+
+.card {
+    border: 1px solid red;
+    padding: 14px;
+}
+
+/* Footer */
 
 footer {
     background-color: black;
@@ -113,7 +150,11 @@ footer p {
     font-size: 12px;
     padding: 14px;
     margin: 0;
-    cursor: pointer;
+
+}
+
+footer a {
+    text-decoration: none;
 }
 
 .fa-heart {
