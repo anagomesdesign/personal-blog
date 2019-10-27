@@ -1,51 +1,42 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
 
-/* General */
-
-body {
-    font-family: 'Roboto', sans-serif;
+* {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
-
-/* Header */
 
 header {
-    background-color: #F1F1F1;
-    margin: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 14px 5%;
-}
-
-@media (max-width: 600px) {
-    .header {
-        margin: auto;
-        display: block;
-        justify-content: center;
-    }
+    background-color: black;
 }
 
 .logo {
-    width: 40px;
-    display: inline-block;
+    opacity: 0.8;
     cursor: pointer;
+    width: 50px;
     margin-right: auto;
 }
 
-@media (max-width: 600px) {
-    .logo {
-        display: block;
-        margin: auto;
-        align-content: center;
-    }
+.logo:hover {
+    opacity: 1.0;
+    transition: all 0.3s ease 0s;
+
 }
 
-.menu-item, .menu-item a, .logo-name {
+li, a, button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #dfe2e6;
     text-decoration: none;
-    font-size: 16px;
-    color: #35322C;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 14px 10%;
 }
 
 .nav-links {
@@ -54,16 +45,7 @@ header {
 
 .nav-links li {
     display: inline-block;
-    padding: 0px 28px;
-}
-
-@media (max-width: 600px) {
-    .nav-links li {
-
-        display: block;
-        padding-bottom: 14px;
-    }
-
+    padding: 0px 20px;
 }
 
 .nav-links li a {
@@ -71,37 +53,43 @@ header {
 }
 
 .nav-links li a:hover {
-    border-bottom: 2px solid #35322C;
-    padding-bottom: 4px;
-}
-
-.nav-links li a:active {
-    background-color: #f1f1f1;
-    border-bottom: 3px solid #35322C;
-}
-
-.active {
+    color: #fff;
     font-weight: 700;
 }
 
-/* footer */
+button {
+    margin-left: 20px;
+    padding: 8px 24px;
+    font-weight: 400;
+    background-color: rgb(53,50,44,1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgb(53,50,44,0.7);
+    font-weight: 700;
+}
 
 footer {
-    background-color: #35322C;
+    background-color: black;
     position: fixed;
     left:0px;
     right:0px;
     bottom:0px;
     width:100%;
-    
 }
 
 footer p {
-    color: #f1f1f1;
+    font-family: 'Roboto', sans-serif;
+    color: #dfe2e6;
     text-align: center;
     font-size: 12px;
     padding: 14px;
     margin: 0;
+    cursor: pointer;
 }
 
 .fa-heart {
