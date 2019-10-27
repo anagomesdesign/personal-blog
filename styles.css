@@ -1,5 +1,6 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Staatliches&display=swap');
 
 * {
     box-sizing: border-box;
@@ -24,19 +25,19 @@ header {
 
 }
 
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 14px 10%;
+}
+
 li, a, button {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #dfe2e6;
     text-decoration: none;
-}
-
-header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 14px 10%;
 }
 
 .nav-links {
@@ -72,6 +73,29 @@ button:hover {
     background-color: rgb(53,50,44,0.7);
     font-weight: 700;
 }
+
+.banner {
+    height: 240px;
+    width: 100%;
+    background-image: url("coffee-photo.jpg");
+    background-color: rgb(53,50,44,1);
+    background-position: center;
+    background-size: cover;
+}
+
+.banner:hover{
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'Staatliches', sans-serif;
+    font-size: 4em;
+    text-align: center;
+    line-break: loose;
+    color: #fff;
+    background-color: rgb(53,50,44,0.45);    
+}
+
 
 footer {
     background-color: black;
