@@ -128,8 +128,26 @@ h1 {
 }
 
 .card {
-    border: 1px solid red;
+    font-family: 'Roboto', sans-serif;
+    background-color: #eaecef;
+    border-radius: 5px;
     padding: 14px;
+}
+
+.card h2, .card p {
+    padding-bottom: 14px;    
+}
+
+.card .read {
+    padding: 8px 24px;
+    font-weight: 400;
+    background-color: rgb(53,50,44,1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 0;
+    margin-top: 14px;
 }
 
 /* Footer */
