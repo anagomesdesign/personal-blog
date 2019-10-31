@@ -1,6 +1,7 @@
-/* Fonts */
+/* Imports */
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bitter&display=swap');
 
 * {
     box-sizing: border-box;
@@ -82,7 +83,7 @@ li, a, .cta {
 .banner {
     height: 240px;
     width: 100%;
-    background-image: url("coffee-photo.jpg");
+    background-image: url("assets/coffee-photo.jpg");
     background-color: rgb(53,50,44,1);
     background-position: center;
     background-size: cover;
@@ -112,7 +113,7 @@ h1 {
 h3 {
     font-family: 'Staatliches', sans-serif;
     font-size: 2em;
-    padding-top: 60px;
+    padding-top: 30px;
     padding-bottom: 20px;
     color: rgb(53,50,44,0.9);
 
@@ -134,7 +135,7 @@ h3 {
 #post-title {
     padding-top: 50px;
     color: rgb(255,255,255,0.9);
-    background-image: url("who-are-you.jpg");
+    background-image: url("assets/who-are-you.jpg");
     background-position: center;
     background-size: cover;
     background-color: rgb(53,50,44,0.45);
@@ -167,7 +168,7 @@ h3 {
 }
 
 .subtitle {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Bitter', sans-serif;
     font-size: 1em;
     font-weight: 300;
     text-align: center;
@@ -220,6 +221,23 @@ h3 {
     transition: all 0.3s ease 0s;
 }
 
+.card-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.fa-bookmark{
+    padding-left: 28px;
+    font-size: 24px;
+    color: rgb(53,50,44,0.4);
+    transition: all 0.3s ease 0s;
+}
+
+.fa-bookmark:hover {
+    color: rgb(53,50,44,0.8);
+    transition: all 0.3s ease 0s;
+}
+
 .card h2, .card p {
     padding-bottom: 14px;
     color: rgb(53,50,44,0.9);     
@@ -240,6 +258,37 @@ h3 {
 
 .read:hover {
     background-color: rgb(7, 88, 251,1);
+}
+
+.social {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 30px;
+    padding-right: 14px;
+    color: rgb(53,50,44,0.4);
+    font-family: 'Roboto', sans-serif;
+}
+
+.social a {
+    color: rgb(53,50,44,0.4);
+    transition: all 0.3s ease 0s;
+}
+
+.social a:hover {
+    color: rgb(53,50,44,0.9);
+    transition: all 0.3s ease 0s;
+}
+
+.icons .fab {
+    padding-right: 14px;
+}
+
+.share {
+    padding-top: 2px;
+    padding-right: 14px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+
 }
 
 /* Footer */
